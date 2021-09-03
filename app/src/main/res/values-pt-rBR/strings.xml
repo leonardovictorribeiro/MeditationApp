@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Aplicativo Meditação</string>
+    <string name="we_are_what_we_do">Nós somos o que fazemos</string>
+    <string name="thousand_of_people">Milhares de pessoas estão usando o silent moon para meditações rápidas</string>
+    <string name="sign_up">Inscrever-se</string>
+    <string name="already_have_an_account">Já possui uma conta?</string>
+    <string name="log_in">Conecte-se</string>
+    <string name="woman_relaxing_while_listening_to_meditation">Mulher relaxando enquanto escuta meditações</string>
+    <string name="silent_moon_logo">Silent Moon App Logomarca</string>
+</resources>
