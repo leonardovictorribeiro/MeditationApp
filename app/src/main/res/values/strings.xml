@@ -7,4 +7,12 @@
     <string name="log_in">Log In</string>
     <string name="woman_relaxing_while_listening_to_meditation">Woman relaxing while listening to meditation</string>
     <string name="silent_moon_logo">Silent Moon App Logo</string>
+    <string name="welcome_back">Welcome Back!</string>
+    <string name="continue_with_facebook">Continue with Facebook</string>
+    <string name="continue_with_google">Continue with Google</string>
+    <string name="or_log_in_with_email">Or log in with email</string>
+    <string name="email_address">Email address</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="background_image_with_geometric_forms">Background image with geometric forms</string>
 </resources>

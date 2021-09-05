@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:background="@drawable/ic_signin_background"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/background_image_with_geometric_forms"/>
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/activity_sign_in_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:elevation="4dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="30dp"
+            app:navigationIcon="@drawable/ic_back_icon"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            />
+
+        <TextView
+            android:id="@+id/activity_sign_in_textview_welcome_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_back"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:textColor="#3F414E"
+            android:layout_marginTop="28dp"
+            app:layout_constraintTop_toBottomOf="@id/activity_sign_in_toolbar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <Button
+            android:id="@+id/activity_sign_in_button_continue_with_facebook"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="33dp"
+            android:layout_marginEnd="20dp"
+            android:paddingVertical="20dp"
+            android:paddingHorizontal="30dp"
+            android:background="@drawable/rounded_button_blue"
+            android:drawableStart="@drawable/ic_facebook"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/continue_with_facebook"
+            android:textAlignment="center"
+            android:textColor="#F6F1FB"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_sign_in_textview_welcome_back" />
+
+        <Button
+            android:id="@+id/activity_sign_in_button_continue_with_google"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_sign_in_button_continue_with_facebook"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/continue_with_google"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-medium"
+            android:textAlignment="center"
+            android:textColor="#3F414E"
+            android:background="@drawable/rounded_gray_border_button"
+            android:paddingVertical="20dp"
+            android:paddingHorizontal="30dp"
+            android:drawableStart="@drawable/ic_google"/>
+
+        <TextView
+            android:id="@+id/activity_sign_in_textview_or_log_in_with_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/or_log_in_with_email"
+            app:layout_constraintTop_toBottomOf="@id/activity_sign_in_button_continue_with_google"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:textSize="14sp"
+            android:textColor="#A1A4B2"/>
+
+        <EditText
+            android:id="@+id/activity_sign_in_plain_text_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="@string/email_address"
+            android:autofillHints="emailAddress"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-light"
+            android:padding="20dp"
+            app:layout_constraintTop_toBottomOf="@id/activity_sign_in_textview_or_log_in_with_email"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/rounded_gray_input"
+            />
+
+        <EditText
+            android:id="@+id/activity_sign_in_password_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="@string/password"
+            android:autofillHints="password"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-light"
+            android:padding="20dp"
+            app:layout_constraintTop_toBottomOf="@id/activity_sign_in_plain_text_input"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/rounded_gray_input"
+            />
+
+        <Button
+            android:id="@+id/activity_sign_in_button_login"
+            android:layout_width="0dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/rounded_button_purple"
+            android:text="@string/log_in"
+            android:textColor="@color/pearl"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/activity_sign_in_password_input"
+            tools:ignore="TextContrastCheck" />
+
+        <TextView
+            android:id="@+id/activity_sign_in_textview_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/activity_sign_in_button_login"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="@string/forgot_password"
+            android:textSize="14sp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#3F414E"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

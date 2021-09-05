@@ -8,4 +8,12 @@
     <string name="log_in">Conecte-se</string>
     <string name="woman_relaxing_while_listening_to_meditation">Mulher relaxando enquanto escuta meditações</string>
     <string name="silent_moon_logo">Silent Moon App Logomarca</string>
+    <string name="welcome_back">Bem-vindo de Volta!</string>
+    <string name="continue_with_facebook">Continue com Facebook</string>
+    <string name="continue_with_google">Continue com Google</string>
+    <string name="or_log_in_with_email">Ou conecte-se com seu email</string>
+    <string name="email_address">Endereço de email</string>
+    <string name="password">Senha</string>
+    <string name="forgot_password">Esqueceu a senha?</string>
+    <string name="background_image_with_geometric_forms">Imagem de fundo com formas geométricas</string>
 </resources>
