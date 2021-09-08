@@ -21,8 +21,22 @@ class MainActivity : AppCompatActivity() {
 
         val btnLogIn = binding.activityMainTextviewLogin
         btnLogIn.setOnClickListener(View.OnClickListener {
-            val intent = Intent(this, SignInActivity::class.java)
-            startActivity(intent)
+            openSignInActivity()
         })
+
+        val btnSignIn = binding.activityMainButtonSignup
+        btnSignIn.setOnClickListener(View.OnClickListener {
+            openWelcomeActivity()
+        })
+    }
+
+    fun openWelcomeActivity(){
+        val intent = Intent(this, WelcomeActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun openSignInActivity(){
+        val intent = Intent(this, SignInActivity::class.java)
+        startActivity(intent)
     }
 }

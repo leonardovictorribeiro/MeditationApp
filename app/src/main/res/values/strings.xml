@@ -15,4 +15,9 @@
     <string name="password">Password</string>
     <string name="forgot_password">Forgot password?</string>
     <string name="background_image_with_geometric_forms">Background image with geometric forms</string>
+    <string name="to_silent_moon">to Silent Moon</string>
+    <string name="hi_user_welcome">Hi User, Welcome</string>
+    <string name="get_started">Get Started</string>
+    <string name="explore_the_app">Explore the app, Find some peace of mind to prepare for meditation.</string>
+    <string name="woman_in_lotus_position_background">Woman in lotus position</string>
 </resources>
